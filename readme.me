@@ -1,0 +1,13 @@
+Install
+npm install express mongoose dotenv swagger-ui-express
+npm install --save-dev typescript ts-node nodemon @types/express @types/node
+
+
+Estrutura do Projeto
+A estrutura do projeto seguirá os princípios da Clean Architecture, que divide o projeto em camadas:
+
+-- Entities: Contém as entidades do domínio.
+-- Use Cases: Contém a lógica de negócio.
+-- Controllers: Responsável por receber as requisições e enviar as respostas.
+-- Repositories: Responsável pela comunicação com o banco de dados.
+-- Infrastructure: Configurações e detalhes de implementação, como o banco de dados, servidor, etc.
