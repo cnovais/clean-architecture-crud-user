@@ -11,3 +11,13 @@ A estrutura do projeto seguirá os princípios da Clean Architecture, que divide
 -- Controllers: Responsável por receber as requisições e enviar as respostas.
 -- Repositories: Responsável pela comunicação com o banco de dados.
 -- Infrastructure: Configurações e detalhes de implementação, como o banco de dados, servidor, etc.
+
+Precisa rodar o mongo local:
+	- brew tap mongodb/brew
+	- brew install mongodb-community
+
+INICIAR O MONGO:
+
+brew services start mongodb/brew/mongodb-community
+brew services stop mongodb/brew/mongodb-community
+
