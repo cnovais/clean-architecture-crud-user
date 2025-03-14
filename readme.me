@@ -12,12 +12,25 @@ A estrutura do projeto seguirá os princípios da Clean Architecture, que divide
 -- Repositories: Responsável pela comunicação com o banco de dados.
 -- Infrastructure: Configurações e detalhes de implementação, como o banco de dados, servidor, etc.
 
-Precisa rodar o mongo local:
+Precisa rodar o mongo local(DEPRECTED):
 	- brew tap mongodb/brew
 	- brew install mongodb-community
 
-INICIAR O MONGO:
+INICIAR O MONGO (DEPRECTED):
 
 brew services start mongodb/brew/mongodb-community
 brew services stop mongodb/brew/mongodb-community
 
+/////////////////////////
+
+// RODAR LOCAL
+npx nodemon
+
+// ADD NO LAUCH
+{
+	"type": "node",
+	"request": "attach",
+	"name": "Attach to Nodemon",
+	"restart": true,
+	"port": 9229
+}
